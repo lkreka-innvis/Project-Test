@@ -10,6 +10,7 @@
         color: $header-color;
         padding-bottom: 30px;
         font-family: "Roboto", sans-serif;
+        font-weight: bold;
         @include bp-tablet-max{
             padding-top: 50px;
         }

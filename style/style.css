@@ -95,6 +95,7 @@
   color: #f0d761;
   padding-bottom: 30px;
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 @media (max-width: 768px) {
   .gtd-header {
