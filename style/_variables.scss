@@ -1,0 +1,46 @@
+
+// colors
+
+$bacground-color:#ffffff;
+$navbar-color:#4f4d53;
+$header-color :#f0d761;
+$footer-header : #e8b717;
+$border-color: #e8be02;
+
+
+
+//Media Query Responsive
+$bp-mobile: 576px;
+$bp-tablet: 768px;
+$bp-laptop: 981px;
+$bp-desktop:1200px;
+$bp-large-desktop :1400px;
+$bp-extra-large-desktop :2400px;
+
+
+
+
+//mediaqueries
+
+@mixin bp-mobile-max {
+    @media (max-width: $bp-mobile)  {@content;}
+  }
+
+  @mixin bp-tablet-max {
+    @media (max-width: $bp-tablet) {@content;}
+  }
+
+  @mixin bp-laptop-max {
+    @media (max-width: $bp-laptop) {@content;} 
+  }
+
+  @mixin bp-desktop-max {
+    @media (max-width: $bp-desktop) {@content;}
+  }
+
+  @mixin bp-large-desktop-max {
+    @media (max-width:  $bp-large-desktop) {@content;}
+  }
+  @mixin bp-extra-large-desktop-max {
+    @media (min-width:$bp-large-desktop) and (max-width: $bp-extra-large-desktop) {@content;}
+  }

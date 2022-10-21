@@ -1,0 +1,22 @@
+.gtd {
+  &-content {
+    &-img {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &-three-images{
+    gap: 30px;
+    display: flex;
+      position: relative;
+      bottom: 100px;
+      @include bp-tablet-max{
+        bottom: 0;
+        padding-top: 45px;
+      }
+      @include bp-mobile-max{
+        display: flex;
+    flex-direction: column;
+      }
+  }
+}

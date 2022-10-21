@@ -1,0 +1,16 @@
+@import "navbar.scss";
+@import "_variables.scss";
+@import "_content.scss";
+@import "_information.scss";
+@import "_footer.scss";
+
+body,html{
+background-color: $bacground-color;
+margin: 0;
+padding: 0;
+height: 100%;
+width: 100%;
+box-sizing: border-box;
+}
+
+

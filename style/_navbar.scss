@@ -1,0 +1,57 @@
+@import "_variables.scss";
+.gtd {
+  &-navbar-section {
+    padding: 0;
+  }
+  &-text {
+    text-align: start;
+    color: $bacground-color;
+    background-color: $navbar-color;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    p {
+      margin-left: 30%;
+      padding: 0;
+      align-self: center;
+      display: flex;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+  &-banner {
+    img {
+      width: 100%;
+      border: none;
+    }
+    h1 {
+      font-size: 100px;
+      font-family: "Roboto", sans-serif;
+      position: absolute;
+      top: 38%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $navbar-color;
+      @include bp-extra-large-desktop-max{
+        top: 20%;
+      }
+      @include bp-large-desktop-max {
+        top: 20%;
+        font-size: 55px;
+      }
+      @include bp-laptop-max {
+        top: 13%;
+      }
+      @include bp-tablet-max {
+        font-size: 48px;
+        top: 13%;
+      }
+      @include bp-mobile-max {
+        font-size: 28px;
+        top: 10%;
+        max-width: 180px;
+      }
+    }
+  }
+}
