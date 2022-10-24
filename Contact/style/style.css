@@ -1,0 +1,117 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0;
+  margin: 0;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  max-width: 800px;
+  width: 100%;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  padding-right: 20px;
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    max-width: 280px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.card-img img {
+  width: 300px;
+  height: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+}
+
+@media (max-width: 576px) {
+  .card-img img {
+    width: 100%;
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+}
+
+.card-title {
+  font-size: 27px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-sub {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #c9c9c5;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.card-div::after {
+  content: "";
+  width: 35px;
+  height: 5px;
+  background-color: #7cde97;
+  display: block;
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.card-paragraph {
+  color: black;
+  font-size: 20px;
+}
+
+@media (max-width: 576px) {
+  .card-paragraph {
+    word-break: break-all;
+  }
+}
+
+.card-holder-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.card-button {
+  color: #6fddbc;
+  border: none;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 20px;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+
+.card button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=style.css.map */

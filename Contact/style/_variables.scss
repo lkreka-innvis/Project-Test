@@ -1,0 +1,7 @@
+$bp-mobile: 576px;
+
+@mixin bp-mobile-max {
+    @media (max-width: $bp-mobile) {
+      @content;
+    }
+  }
