@@ -13,6 +13,8 @@ body {
     background-color: #1765b5;
     color: #ffff;
     padding: 20px;
+    height: auto;
+    overflow-y: scroll;
 
     &-button {
         padding: 20px;
