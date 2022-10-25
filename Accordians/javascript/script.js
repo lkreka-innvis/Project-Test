@@ -12,21 +12,7 @@ for (let i = 0; i < content.length; i++) {
       else{
         content[i].style.display = "none"
       }
-    })
-    // checkbox.onclick = function () {
-    //     for (i = 0; i < title.length; i++) {
-    //                 //title[i].addEventListener("click", function() {
-    //              title.onclick = function(){
-    //                   const content1 = this.nextElementSibling;
-    //                   if (content1.style.display == "block") {
-    //                     content1.style.display = "none";
-    //                   } else {
-    //                     content1.style.display = "block";
-    //                   }
-    //                 };
-                
-    //               }
-    // }
+
 
     title[i].addEventListener('click', () => {
             for (let j = 0; j < title.length; j++) {
