@@ -16,6 +16,8 @@ body {
   background-color: #1765b5;
   color: #ffff;
   padding: 20px;
+  height: auto;
+  overflow-y: scroll;
 }
 
 .accoridans-button {
@@ -49,24 +51,23 @@ body {
 @media (max-width: 576px) {
   .accoridans-title {
     gap: 15px;
+    font-size: 16px;
   }
+}
+
+.accoridans-title .accoridans-icon {
+  -webkit-transform: rotate(182deg);
+          transform: rotate(182deg);
+}
+
+.accoridans-title .accoridans-icon.active {
+  -webkit-transform: rotate(359deg);
+          transform: rotate(359deg);
 }
 
 .accoridans h1 {
   margin: 0;
   font-family: 300;
-}
-
-.accoridans-icon {
-  -webkit-transform: rotate(268deg);
-          transform: rotate(268deg);
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.accoridans-icon.active {
-  -webkit-transform: rotate(91deg);
-          transform: rotate(91deg);
 }
 
 .accoridans-contnent {

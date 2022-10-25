@@ -40,25 +40,23 @@ body {
 
         @include bp-mobile-max {
             gap: 15px;
+            font-size: 16px;
         }
+          .accoridans-icon{
+        transform: rotate(182deg);
+        &.active {
+            transform: rotate(359deg)
+               }
+           }
     }
+    
 
     h1 {
         margin: 0;
         font-family: 300;
     }
-
-
-&-icon {
-    transform: rotate(268deg);
-    font-size: 25px;
-    font-weight: 700;
-
-    &.active {
-        transform: rotate(91deg);
-    }
-}
-
+ 
+ 
 &-contnent {
     p {
         font-size: 18px;
@@ -70,5 +68,4 @@ body {
         display: block;
     }
 }
-
 }
